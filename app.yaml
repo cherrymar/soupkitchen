@@ -16,7 +16,7 @@ handlers:
   static_dir: music
 - url: /backgrounds
   static_dir: backgrounds
-#static directories should go ABOVE the catch all url (.*)
+# static directories should go ABOVE the catch all url (.*)
 - url: .*
   script: main.app
 
