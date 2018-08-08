@@ -23,21 +23,31 @@ body, html {
     background-size: cover;
 }
 
-/* Can't get flex to resize my stuff */
-#title {
-  /* position: absolute; */
-  /* top: 60px; */
-  width: 80%;
+.title {
   color: white;
   font-size: 100px;
+  display: flex;
+  flex-shrink: 1;
+  flex-grow: 1;
+  justify-content: center;
+  align: center;
+  padding-top: 15vh;
+  /* position: relative; */
+  vertical-align: middle;
+}
+
+#title-words {
   text-align: center;
   text-shadow: 2px 2px grey;
-  background-color: black;
-  margin: 20px;
+  font-weight: bold;
+  font-size: 15vh;
+  letter-spacing: 0.1em;
+  /* background-color: #44060d; */
+  /* padding: 20px; */
   display: flex;
+  justify-content: space-around;
+  width: 95%;
 
-  flex-shrink: 2;
-  flex-grow: 2;
 }
 
 .navigation {
@@ -51,12 +61,11 @@ body, html {
 }
 
 
-
 /* Style the top navigation bar */
 /* Bug- when the screen is squished, the background color becomes clear */
 .navbar {
     display: flex;
-    background-color: #333;
+    /* background-color: #333; */
     font-size: 20px;
     height: 50px;
     font-size: 20px;
